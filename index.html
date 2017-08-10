@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>新建hexo文章</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="content">
+    <form name="newPost" method="post" action="newPost.php">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>hexo——便捷添加文章</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <fieldset>
+                        <label>文件名</label>
+                        <p><input type="text" name="fileName"/></p>
+                    </fieldset>
+                </div>
+                <div class="col-md-3">
+                    <fieldset>
+                        <label>文章名</label>
+                        <p><input type="text" name="postName"/></p>
+                    </fieldset>
+                </div>
+                <div class="col-md-3">
+                    <fieldset>
+                        <label>分类名</label>
+                        <p><input type="text" name="categories"/></p>
+                        <p> 多个分类名按照层级用“,”隔开。</p>
+                    </fieldset>
+                </div>
+                <div class="col-md-3">
+                    <fieldset>
+                        <label>标签名</label>
+                        <p><input type="text" name="tags"/>
+                        <p>多个标签名用“,”隔开
+                            <col-md->.</col-md->
+                    </fieldset>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-primary" type="submit">新建文章</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>
+</body>
+</html>
